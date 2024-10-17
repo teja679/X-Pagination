@@ -7,9 +7,13 @@ function App() {
   const [page, setPage] = useState(1);
 
   const fetchData = async () => {
-    const response = await fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json');
-    const jsonResponse = await response.json();
-    setEmployees(jsonResponse)
+    try {
+      const response = await fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json');
+      const jsonResponse = await response.json();
+      setEmployees(jsonResponse)
+    } catch (err) {
+      console.error("Fetching data failed: ", err)
+    }
   }
   const handleChange = (val) => {
     let len = employees.length;
