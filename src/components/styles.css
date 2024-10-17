@@ -1,0 +1,28 @@
+.landing-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    margin: 1rem;
+    border-spacing: 0 1px;
+    text-align: left;
+}
+
+thead {
+    background-color: #292;
+    box-shadow: 0 0 0 2px 0.25;
+    color: #FFFFFF;
+}
+
+tbody {
+    background-color: #eee;
+}
+
+tr,
+th,
+td {
+    padding: 0.8rem 2rem;
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+}
+
+.App {
+  /* text-align: center; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.App h1 {
+  padding-bottom: 10px;
+}
+
+.buttons-div {
+  /* display: flex; */
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.buttons-div>* {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #229922;
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+.next-btn,
+.prev-btn {
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.page-no {
+  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
+}
