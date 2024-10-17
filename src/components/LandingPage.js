@@ -12,7 +12,7 @@ const LandingPage = ({ employees, page }) => {
 
     useEffect(() => {
         filterData(page)
-    }, [page])
+    }, [page, employees])
 
     return (
         <div className='landing-page'>
