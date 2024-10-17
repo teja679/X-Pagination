@@ -12,7 +12,8 @@ function App() {
       const jsonResponse = await response.json();
       setEmployees(jsonResponse)
     } catch (err) {
-      console.error("Fetching data failed: ", err)
+      alert('failed to fetch data')
+      console.long("failed to fetch data")
     }
   }
   const handleChange = (val) => {
